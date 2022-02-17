@@ -1,0 +1,6 @@
+cd 'E:\Έγγραφα\eclipse workspace\ypologistiki\MLPResults'
+stats MLPplotData.txt
+stats 'MLPplotData.txt'
+plot for [i=2:2] 'MLPplotData.txt' index (i-1) t sprintf("False Predictions %d", i)
+plot for [i=1:1] 'MLPplotData.txt' index (i-1) t sprintf("Correct Predictions %d", i),\
+for [i=2:2] 'MLPplotData.txt' index (i-1) t sprintf("False Predictions %d", i)
